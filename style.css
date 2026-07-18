@@ -172,3 +172,22 @@ footer {
 .price-card ul li {
     margin-bottom: 0.5rem;
 }
+
+/* Add to style.css */
+.price-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.price-card:hover {
+    border-color: #000;
+    transform: translateY(-5px);
+}
+
+.selected {
+    background-color: #f0f0f0;
+    border-left: 5px solid #000;
+}
