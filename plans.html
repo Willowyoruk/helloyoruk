@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Plan — Yoruk</title>
+<meta name="description" content="Pick a website package and an optional care plan, see it laid out clearly, and send your plan request to Yoruk — no payment, no commitment.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark">YORUK</a>
+    <nav class="header-nav">
+      <a href="index.html#contact" class="header-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="builder-hero">
+    <div class="wrap">
+      <span class="waypoint" aria-hidden="true"></span>
+      <h1>Let's build your plan</h1>
+      <p class="section-sub">Pick what fits, watch it total up on the right, then send it my way. This doesn't charge or book anything — it just gives me everything I need to follow up with a real proposal.</p>
+    </div>
+  </section>
+
+  <section class="builder">
+    <div class="wrap builder-grid">
+
+      <div class="builder-steps">
+
+        <div class="builder-step">
+          <h2><span class="step-num">1</span> Website build</h2>
+          <div class="option-group" data-group="build" data-required="true">
+            <label class="option-card">
+              <input type="radio" name="build" value="none" checked data-label="No build needed" data-price="0" data-cadence="">
+              <span class="option-name">Not needed / not sure yet</span>
+              <span class="option-desc">I'll figure this out with you</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="build" value="starter" data-label="Starter build" data-price="500" data-cadence="one-time">
+              <span class="option-name">Starter <span class="option-price">$500</span></span>
+              <span class="option-desc">1-page site, up to 10 photos, up to 5 links</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="build" value="growth" data-label="Growth build" data-price="1500" data-cadence="one-time">
+              <span class="option-name">Growth <span class="option-price">$1,500</span></span>
+              <span class="option-desc">3–5 pages, up to 25 photos, basic SEO</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="build" value="complete" data-label="Complete build" data-price="3000" data-cadence="one-time">
+              <span class="option-name">Complete <span class="option-price">$3,000+</span></span>
+              <span class="option-desc">6+ pages, custom, booking/e-commerce ready</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="builder-step">
+          <h2><span class="step-num">2</span> Ongoing care <span class="step-optional">optional</span></h2>
+          <div class="option-group" data-group="care">
+            <label class="option-card">
+              <input type="radio" name="care" value="none" checked data-label="No ongoing care" data-price="0" data-cadence="">
+              <span class="option-name">None</span>
+              <span class="option-desc">Just the build for now</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="care" value="monitor" data-label="Monitor plan" data-price="125" data-cadence="/mo">
+              <span class="option-name">Monitor <span class="option-price">$125/mo</span></span>
+              <span class="option-desc">Weekly review check, urgent flags</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="care" value="manage" data-label="Manage plan" data-price="325" data-cadence="/mo">
+              <span class="option-name">Manage <span class="option-price">$325/mo</span></span>
+              <span class="option-desc">Review replies, 3 posts/wk, monthly edit</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="care" value="grow" data-label="Grow plan" data-price="700" data-cadence="/mo">
+              <span class="option-name">Grow <span class="option-price">$700/mo</span></span>
+              <span class="option-desc">Daily posting, same-day replies, reporting</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="builder-step">
+          <h2><span class="step-num">3</span> Domain</h2>
+          <div class="option-group" data-group="domain">
+            <label class="option-card">
+              <input type="radio" name="domain" value="have" checked data-label="Already own a domain" data-price="0" data-cadence="">
+              <span class="option-name">I already own one</span>
+              <span class="option-desc">No setup fee needed</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="domain" value="need" data-label="Needs help buying a domain" data-price="60" data-cadence="one-time">
+              <span class="option-name">I need help buying one <span class="option-price">$60</span></span>
+              <span class="option-desc">Registered in your name, you keep it</span>
+            </label>
+            <label class="option-card">
+              <input type="radio" name="domain" value="unsure" data-label="Not sure about domain yet" data-price="0" data-cadence="">
+              <span class="option-name">Not sure yet</span>
+              <span class="option-desc">We'll sort it out together</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="builder-summary">
+        <h2>Your plan</h2>
+        <ul class="summary-list" id="summary-list"></ul>
+
+        <div class="summary-totals" id="summary-totals"></div>
+
+        <form id="plan-form" novalidate>
+          <label for="p-name">Name</label>
+          <input type="text" id="p-name" required autocomplete="name">
+
+          <label for="p-business">Business name</label>
+          <input type="text" id="p-business" autocomplete="organization">
+
+          <label for="p-email">Email</label>
+          <input type="email" id="p-email" required autocomplete="email">
+
+          <label for="p-notes">Anything else I should know?</label>
+          <textarea id="p-notes" rows="3" placeholder="Timeline, budget flexibility, specific pages you need — anything helps."></textarea>
+
+          <button type="submit" class="btn btn-primary">Request this plan</button>
+          <p class="form-note">This opens your email app with your plan pre-filled. Nothing is charged and nothing is booked — I'll follow up within 1–2 business days to confirm details.</p>
+        </form>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© 2026 Yoruk LLC</span>
+    <a href="mailto:yorukllc@gmail.com">yorukllc@gmail.com</a>
+  </div>
+</footer>
+
+<script src="plans.js"></script>
+</body>
+</html>
