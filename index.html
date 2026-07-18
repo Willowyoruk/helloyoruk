@@ -26,44 +26,64 @@
     </main>
 
     <!-- SECTION: Pricing & Service Selection -->
-    <section id="pricing" class="pricing-section">
-        <h2>Service Packages</h2>
-        <div class="pricing-container">
-            <!-- Basic Package Card -->
-            <div class="price-card" onclick="alert('Includes: Landing page setup, DNS configuration, and mobile-responsive design.')">
-                <h3>Basic</h3>
+  <section id="pricing" class="pricing-container">
+    
+    <!-- Tier 1: Starter -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Starter</h3>
                 <div class="amount">$500</div>
+                <p>Click to view details</p>
+            </div>
+            <div class="flip-card-back">
+                <h3>Starter Includes:</h3>
                 <ul>
-                    <li>Landing Page</li>
-                    <li>Review Monitoring</li>
+                    <li>Landing page to capture interest.</li>
+                    <li>Basic monitoring of online reviews.</li>
                 </ul>
             </div>
-            <!-- Growth Package Card -->
-            <div class="price-card" onclick="alert('Includes: 5-page custom site, social media scheduling, and analytics report.')">
+        </div>
+    </div>
+
+    <!-- Tier 2: Growth -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
                 <h3>Growth</h3>
                 <div class="amount">$1,500</div>
+                <p>Click to view details</p>
+            </div>
+            <div class="flip-card-back">
+                <h3>Growth Includes:</h3>
                 <ul>
-                    <li>5-Page Website</li>
-                    <li>Social Media Posting</li>
+                    <li>5-page website build.</li>
+                    <li>Consistent social media posting.</li>
+                    <li>Active review management.</li>
                 </ul>
             </div>
         </div>
+    </div>
 
-        <!-- À La Carte Section -->
-        <div class="ala-carte">
-            <h3>À La Carte Services</h3>
-            <table id="service-table">
-                <tr onclick="toggleSelect(this)">
-                    <td>Social Media Reply Service</td>
-                    <td class="price">$200/mo</td>
-                </tr>
-                <tr onclick="toggleSelect(this)">
-                    <td>Social Media Content Posting</td>
-                    <td class="price">$300/mo</td>
-                </tr>
-            </table>
+    <!-- Tier 3: Scale -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Scale</h3>
+                <div class="amount">$3,000+</div>
+                <p>Click to view details</p>
+            </div>
+            <div class="flip-card-back">
+                <h3>Scale Includes:</h3>
+                <ul>
+                    <li>Full custom website design.</li>
+                    <li>Daily social media & engagement.</li>
+                    <li>Advanced lead generation strategy.</li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- SECTION: Footer -->
     <footer class="fade-in">
