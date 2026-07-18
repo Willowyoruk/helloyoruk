@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- SECTION: Metadata & External Resources -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoruk | Digital Strategy</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
+    <!-- SECTION: Header (Status & Navigation) -->
     <header class="fade-in">
         <div class="status-badge">Available for Projects</div>
         <nav>
@@ -15,16 +18,19 @@
         </nav>
     </header>
 
+    <!-- SECTION: Main Hero (Title & Tagline) -->
     <main class="fade-in">
         <h1>Yoruk</h1>
         <p class="tagline">Elevating digital presence through curated web and social strategy.</p>
         <a href="#pricing" class="cta-button">View Services</a>
     </main>
 
+    <!-- SECTION: Pricing & Service Selection -->
     <section id="pricing" class="pricing-section">
         <h2>Service Packages</h2>
         <div class="pricing-container">
-            <div class="price-card" onclick="alert('Full details: Landing page setup, DNS configuration, and responsive design.')">
+            <!-- Basic Package Card -->
+            <div class="price-card" onclick="alert('Includes: Landing page setup, DNS configuration, and mobile-responsive design.')">
                 <h3>Basic</h3>
                 <div class="amount">$500</div>
                 <ul>
@@ -32,7 +38,8 @@
                     <li>Review Monitoring</li>
                 </ul>
             </div>
-            <div class="price-card" onclick="alert('Full details: 5-page custom site, social media scheduling, and advanced analytics.')">
+            <!-- Growth Package Card -->
+            <div class="price-card" onclick="alert('Includes: 5-page custom site, social media scheduling, and analytics report.')">
                 <h3>Growth</h3>
                 <div class="amount">$1,500</div>
                 <ul>
@@ -42,6 +49,7 @@
             </div>
         </div>
 
+        <!-- À La Carte Section -->
         <div class="ala-carte">
             <h3>À La Carte Services</h3>
             <table id="service-table">
@@ -57,6 +65,14 @@
         </div>
     </section>
 
+    <!-- SECTION: Footer -->
+    <footer class="fade-in">
+        <div>&copy; 2026 Yoruk LLC</div>
+        <div class="footer-line"></div>
+        <div><a href="mailto:yorukllc@gmail.com" style="color: inherit; text-decoration: none;">yorukllc@gmail.com</a></div>
+    </footer>
+
+    <!-- SECTION: JavaScript Integration -->
     <script src="script.js"></script>
 </body>
 </html>
