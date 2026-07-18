@@ -1,102 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- SECTION: Metadata & External Resources -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoruk | Digital</title>
-    <!-- Linking the CSS file -->
-    <link rel="stylesheet" href="style.css?v=2">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoruk — Digital Presence, Handled</title>
+<meta name="description" content="Yoruk builds websites, manages social posting, watches your reviews, and handles your domains — so your business shows up well online, without you having to manage it.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SECTION: Header (Status & Navigation) -->
-    <header class="fade-in">
-        <div class="status-badge">Available for Projects</div>
-        <nav>
-            <a href="mailto:yorukllc@gmail.com">Contact Me</a>
-        </nav>
-    </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- SECTION: Main Hero (Title & Tagline) -->
-    <main class="fade-in">
-        <h1>Yoruk</h1>
-        <p class="tagline">Elevating digital presence through curated web and social strategy.</p>
-        <a href="#pricing" class="cta-button">View Services</a>
-    </main>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="wordmark">YORUK</a>
+    <nav class="header-nav">
+      <span class="availability">
+        <span class="availability-dot" aria-hidden="true"></span>
+        Available for new projects
+      </span>
+      <a href="#contact" class="header-cta">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- SECTION: Pricing & Service Selection -->
-    <section id="pricing" class="pricing-section">
-        <h2>Service Packages</h2>
-        <div class="pricing-container">
-            
-            <!-- Tier 1: Starter -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Starter</h3>
-                        <div class="amount">$500</div>
-                        <p>Click to view details</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Starter Includes:</h3>
-                        <ul>
-                            <li>Landing page to capture interest.</li>
-                            <li>Basic monitoring of online reviews.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<main id="main">
 
-            <!-- Tier 2: Growth -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Growth</h3>
-                        <div class="amount">$1,500</div>
-                        <p>Click to view details</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Growth Includes:</h3>
-                        <ul>
-                            <li>5-page website build.</li>
-                            <li>Consistent social media posting.</li>
-                            <li>Active review management.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tier 3: Scale -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h3>Scale</h3>
-                        <div class="amount">$3,000+</div>
-                        <p>Click to view details</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h3>Scale Includes:</h3>
-                        <ul>
-                            <li>Full custom website design.</li>
-                            <li>Daily social media & engagement.</li>
-                            <li>Advanced lead generation strategy.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Web &amp; social management for small businesses</p>
+        <h1>Your digital presence,<br><em>handled.</em></h1>
+        <p class="hero-sub">
+          I build the website, keep your socials posting, watch what people say about you online, and buy and set up the domain — so you can run your business instead of your inbox.
+        </p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary">See packages</a>
+          <a href="#contact" class="btn btn-ghost">Tell me what you need</a>
         </div>
-    </section>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="route">
+          <span class="route-line"></span>
+          <span class="route-point" style="--d:0"></span>
+          <span class="route-point" style="--d:1"></span>
+          <span class="route-point" style="--d:2"></span>
+          <span class="route-point" style="--d:3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECTION: Footer -->
-    <footer class="fade-in">
-        <div>&copy; 2026 Yoruk LLC</div>
-        <div class="footer-line"></div>
-        <div><a href="mailto:yorukllc@gmail.com" style="color: inherit; text-decoration: none;">yorukllc@gmail.com</a></div>
-    </footer>
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="waypoint" aria-hidden="true"></span>
+        <h2>What I take off your plate</h2>
+        <p class="section-sub">One person, one point of contact, everything connected — instead of five different freelancers who don't talk to each other.</p>
+      </div>
 
-    <!-- SECTION: JavaScript Integration -->
-    <!-- (Note: The flip functionality is handled by inline JS via the click attribute) -->
-    <script src="script.js"></script>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Website design &amp; build</h3>
+          <p>A site that looks like you spent real money on it — built to actually bring people in, not just sit there.</p>
+        </div>
+        <div class="service-card">
+          <h3>Social media posting</h3>
+          <p>Regular posts across your platforms, planned and scheduled, so your page doesn't go quiet for three weeks at a time.</p>
+        </div>
+        <div class="service-card">
+          <h3>Google profile &amp; reviews</h3>
+          <p>Your business listing kept current, and thoughtful responses to reviews — good, bad, and everything in between.</p>
+        </div>
+        <div class="service-card">
+          <h3>Domain purchasing &amp; setup</h3>
+          <p>I handle the registration, the connections, and the renewals, so you're never the one untangling DNS settings.</p>
+        </div>
+        <div class="service-card">
+          <h3>Ongoing monitoring</h3>
+          <p>Someone keeping an eye on how you show up online, so problems get caught before a customer finds them first.</p>
+        </div>
+        <div class="service-card">
+          <h3>Custom strategy</h3>
+          <p>Not sure what you actually need yet? We figure it out together, based on where your business is right now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="waypoint" aria-hidden="true"></span>
+        <h2>Packages</h2>
+        <p class="section-sub">Three starting points. Tap a card to see what's included and what it costs — or skip straight to a custom plan below.</p>
+      </div>
+
+      <div class="tier-grid">
+
+        <button type="button" class="tier-card" data-tier="starter" aria-pressed="false">
+          <span class="tier-card-inner">
+            <span class="tier-face tier-front">
+              <span class="tier-name">Starter</span>
+              <span class="tier-teaser">A clean, credible first step online.</span>
+              <span class="tier-flip-hint">See what's included</span>
+            </span>
+            <span class="tier-face tier-back">
+              <span class="tier-name">Starter</span>
+              <span class="tier-price">$500</span>
+              <ul class="tier-list">
+                <li>Landing page to capture interest</li>
+                <li>Basic review monitoring</li>
+              </ul>
+              <span class="tier-note">Good for: testing the waters online</span>
+            </span>
+          </span>
+        </button>
+
+        <button type="button" class="tier-card" data-tier="growth" aria-pressed="false">
+          <span class="tier-card-inner">
+            <span class="tier-face tier-front">
+              <span class="tier-name">Growth</span>
+              <span class="tier-teaser">For businesses ready to build real momentum.</span>
+              <span class="tier-flip-hint">See what's included</span>
+            </span>
+            <span class="tier-face tier-back">
+              <span class="tier-name">Growth</span>
+              <span class="tier-price">$1,500</span>
+              <ul class="tier-list">
+                <li>5-page website build</li>
+                <li>Consistent social media posting</li>
+                <li>Active review management</li>
+              </ul>
+              <span class="tier-note">Good for: an established business going online</span>
+            </span>
+          </span>
+        </button>
+
+        <button type="button" class="tier-card" data-tier="complete" aria-pressed="false">
+          <span class="tier-card-inner">
+            <span class="tier-face tier-front">
+              <span class="tier-name">Complete</span>
+              <span class="tier-teaser">Full presence, fully managed.</span>
+              <span class="tier-flip-hint">See what's included</span>
+            </span>
+            <span class="tier-face tier-back">
+              <span class="tier-name">Complete</span>
+              <span class="tier-price">$3,000+</span>
+              <ul class="tier-list">
+                <li>Full custom website design</li>
+                <li>Daily social media &amp; engagement</li>
+                <li>Advanced lead generation strategy</li>
+              </ul>
+              <span class="tier-note">Good for: businesses ready to grow fast</span>
+            </span>
+          </span>
+        </button>
+
+      </div>
+
+      <div class="custom-note">
+        <p><strong>Only need a piece of this?</strong> Packages are a starting point, not a rulebook — tell me what you need and I'll put together a plan that fits.</p>
+        <a href="#contact" class="btn btn-ghost btn-small">Build a custom plan</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <span class="waypoint" aria-hidden="true"></span>
+        <h2>Let's talk about your business</h2>
+        <p class="section-sub">No pressure, no sales script — just tell me what's going on with your online presence and I'll tell you honestly what would help.</p>
+        <a class="contact-email" href="mailto:yorukllc@gmail.com">yorukllc@gmail.com</a>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="business">Business name</label>
+        <input type="text" id="business" name="business" autocomplete="organization">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">What do you need?</label>
+        <textarea id="message" name="message" rows="4" required placeholder="e.g. I need a website and someone to keep up with my Google reviews."></textarea>
+
+        <button type="submit" class="btn btn-primary">Send email</button>
+        <p class="form-note">This opens your email app with everything filled in — nothing is sent from this page directly.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© 2026 Yoruk LLC</span>
+    <a href="mailto:yorukllc@gmail.com">yorukllc@gmail.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
