@@ -351,9 +351,10 @@ em { font-style: italic; color: var(--accent-deep); }
   cursor: pointer;
   font-family: inherit;
   text-align: left;
-  height: 320px;
+  height: 480px;
   display: block;
 }
+
 
 .tier-card-inner {
   position: relative;
@@ -376,7 +377,9 @@ em { font-style: italic; color: var(--accent-deep); }
   padding: 30px 26px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
+
 
 .tier-front {
   background: var(--paper-alt);
@@ -496,8 +499,9 @@ em { font-style: italic; color: var(--accent-deep); }
 
 @media (max-width: 860px) {
   .tier-grid { grid-template-columns: 1fr; }
-  .tier-card { height: 290px; }
+  .tier-card { height: 460px; }
 }
+
 
 /* ============================================
    Ongoing care — monthly retainer cards
