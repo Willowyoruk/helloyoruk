@@ -3,23 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title — shows up in the browser tab and Google search results -->
 <title>Yoruk — Digital Presence, Handled</title>
+
+<!-- Description shown under your link in Google search results -->
 <meta name="description" content="Yoruk builds websites, manages social posting, watches your reviews, and handles your domains — so your business shows up well online, without you having to manage it.">
 
+<!-- Loads the three fonts used across the site (Fraunces, Inter, IBM Plex Mono) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- All the visual styling (colors, layout, fonts) lives in this file -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Accessibility link, invisible until someone tabs to it with a keyboard -->
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- ============================================
+     HEADER — the bar that stays pinned to the top of the page
+     ============================================ -->
 <header class="site-header">
   <div class="wrap header-row">
     <a href="#top" class="wordmark">YORUK</a>
     <nav class="header-nav">
+      <!-- "Available for new projects" badge with the little dot — hidden automatically on small phone screens -->
       <span class="availability">
         <span class="availability-dot" aria-hidden="true"></span>
         Available for new projects
@@ -32,6 +43,9 @@
 
 <main id="main">
 
+  <!-- ============================================
+       HERO — the big introduction at the top of the homepage
+       ============================================ -->
   <section id="top" class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
@@ -40,11 +54,13 @@
         <p class="hero-sub">
           Website. Social posts. Reviews. Domain. I handle the pieces of your online presence you don't have time for, so you can focus on running your business.
         </p>
+        <!-- The two main buttons -->
         <div class="hero-actions">
           <a href="#pricing" class="btn btn-primary">See packages</a>
           <a href="plans.html" class="btn btn-ghost">Build your plan</a>
         </div>
       </div>
+      <!-- Decorative dotted line with dots on the right side of the hero — purely visual, hidden on phones -->
       <div class="hero-mark" aria-hidden="true">
         <div class="route">
           <span class="route-line"></span>
@@ -57,6 +73,9 @@
     </div>
   </section>
 
+  <!-- ============================================
+       SERVICES — the 6-box grid: "What I take off your plate"
+       ============================================ -->
   <section id="services" class="services">
     <div class="wrap">
       <div class="section-head">
@@ -64,6 +83,7 @@
         <p class="section-sub">One person, one point of contact, everything connected — instead of five different freelancers who don't talk to each other.</p>
       </div>
 
+      <!-- Each of these 6 boxes is one service. To edit a service's title or description, just change the text inside its <h3> and <p>. -->
       <div class="service-grid">
         <div class="service-card">
           <h3>Website design &amp; build</h3>
@@ -78,10 +98,9 @@
           <p>Your business listing kept current, and thoughtful responses to reviews — good, bad, and everything in between.</p>
         </div>
         <div class="service-card">
-  <h3>Domain purchasing &amp; setup</h3>
-  <p>I handle the registration and connect it to your site, so you're never the one untangling DNS settings.</p>
-</div>
-
+          <h3>Domain purchasing &amp; setup</h3>
+          <p>I handle the registration and connect it to your site, so you're never the one untangling DNS settings.</p>
+        </div>
         <div class="service-card">
           <h3>Ongoing monitoring</h3>
           <p>Someone keeping an eye on how you show up online, so problems get caught before a customer finds them first.</p>
@@ -94,6 +113,10 @@
     </div>
   </section>
 
+  <!-- ============================================
+       WEBSITE PACKAGES — the 3 flip cards (Starter / Growth / Complete)
+       Tapping a card flips it over to show the price + what's included.
+       ============================================ -->
   <section id="pricing" class="pricing">
     <div class="wrap">
       <div class="section-head">
@@ -103,6 +126,7 @@
 
       <div class="tier-grid">
 
+        <!-- STARTER CARD — front shows the name/teaser, back (tier-back) shows price + bullet list -->
         <button type="button" class="tier-card" data-tier="starter" aria-pressed="false">
           <span class="tier-card-inner">
             <span class="tier-face tier-front">
@@ -125,6 +149,7 @@
           </span>
         </button>
 
+        <!-- GROWTH CARD -->
         <button type="button" class="tier-card" data-tier="growth" aria-pressed="false">
           <span class="tier-card-inner">
             <span class="tier-face tier-front">
@@ -147,6 +172,7 @@
           </span>
         </button>
 
+        <!-- COMPLETE CARD -->
         <button type="button" class="tier-card" data-tier="complete" aria-pressed="false">
           <span class="tier-card-inner">
             <span class="tier-face tier-front">
@@ -171,11 +197,15 @@
 
       </div>
 
-            <p class="tier-footnote">Need a domain? I'll register it for you in your own name for a flat <strong>$60</strong> setup fee — you own it.</p>
-
+      <!-- Small note under the 3 cards about the $60 domain fee -->
+      <p class="tier-footnote">Need a domain? I'll register it for you in your own name for a flat <strong>$60</strong> setup fee — you always own it, not me.</p>
     </div>
   </section>
 
+  <!-- ============================================
+       ONGOING CARE — the 3 monthly plans (Monitor / Manage / Grow)
+       These are plain cards, not flip cards — everything is always visible.
+       ============================================ -->
   <section id="care" class="care">
     <div class="wrap">
       <div class="section-head">
@@ -184,6 +214,7 @@
       </div>
 
       <div class="care-grid">
+        <!-- MONITOR -->
         <div class="care-card">
           <span class="care-name">Monitor</span>
           <span class="care-price">$125<span class="care-price-unit">/mo</span></span>
@@ -192,6 +223,7 @@
             <li>I flag anything urgent right away</li>
           </ul>
         </div>
+        <!-- MANAGE — has "care-card-featured" class, which is what gives it the highlighted border and the "Most common" badge -->
         <div class="care-card care-card-featured">
           <span class="care-badge">Most common</span>
           <span class="care-name">Manage</span>
@@ -202,6 +234,7 @@
             <li>1 small site edit per month</li>
           </ul>
         </div>
+        <!-- GROW -->
         <div class="care-card">
           <span class="care-name">Grow</span>
           <span class="care-price">$700<span class="care-price-unit">/mo</span></span>
@@ -214,6 +247,7 @@
         </div>
       </div>
 
+      <!-- The "Build your plan" callout box under the 3 care cards -->
       <div class="custom-note">
         <p><strong>Not sure what fits?</strong> Build a plan step by step and see it all in one place before you reach out.</p>
         <a href="plans.html" class="btn btn-primary btn-small">Build your plan</a>
@@ -221,13 +255,18 @@
     </div>
   </section>
 
+  <!-- ============================================
+       CONTACT — the form at the bottom of the homepage.
+       Submitting it doesn't send anything from the page itself — it just
+       opens the visitor's own email app with a message pre-filled to you.
+       That logic lives in script.js, not here.
+       ============================================ -->
   <section id="contact" class="contact">
     <div class="wrap contact-grid">
-           <div class="contact-copy">
+      <div class="contact-copy">
         <h2>Let's talk about your business</h2>
         <p class="section-sub">No pressure, no sales script — just tell me what's going on with your online presence and I'll help you find the right next step.</p>
       </div>
-
 
       <form class="contact-form" id="contact-form">
         <label for="name">Name</label>
@@ -250,13 +289,16 @@
 
 </main>
 
+<!-- ============================================
+     FOOTER — the bottom of every page
+     ============================================ -->
 <footer class="site-footer">
   <div class="wrap footer-row">
     <span>© 2026 Yoruk</span>
   </div>
 </footer>
 
-
+<!-- Loads the interactive behavior for this page (flip cards + the contact form) -->
 <script src="script.js"></script>
 </body>
 </html>
