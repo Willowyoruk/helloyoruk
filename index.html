@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoruk | Digital Strategy</title>
+    <title>Yoruk | Digital</title>
     <!-- Linking the CSS file -->
     <link rel="stylesheet" href="style.css?v=2">
 </head>
@@ -26,64 +26,67 @@
     </main>
 
     <!-- SECTION: Pricing & Service Selection -->
-  <section id="pricing" class="pricing-container">
-    
-    <!-- Tier 1: Starter -->
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3>Starter</h3>
-                <div class="amount">$500</div>
-                <p>Click to view details</p>
+    <section id="pricing" class="pricing-section">
+        <h2>Service Packages</h2>
+        <div class="pricing-container">
+            
+            <!-- Tier 1: Starter -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Starter</h3>
+                        <div class="amount">$500</div>
+                        <p>Click to view details</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Starter Includes:</h3>
+                        <ul>
+                            <li>Landing page to capture interest.</li>
+                            <li>Basic monitoring of online reviews.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-                <h3>Starter Includes:</h3>
-                <ul>
-                    <li>Landing page to capture interest.</li>
-                    <li>Basic monitoring of online reviews.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <!-- Tier 2: Growth -->
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3>Growth</h3>
-                <div class="amount">$1,500</div>
-                <p>Click to view details</p>
+            <!-- Tier 2: Growth -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Growth</h3>
+                        <div class="amount">$1,500</div>
+                        <p>Click to view details</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Growth Includes:</h3>
+                        <ul>
+                            <li>5-page website build.</li>
+                            <li>Consistent social media posting.</li>
+                            <li>Active review management.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-                <h3>Growth Includes:</h3>
-                <ul>
-                    <li>5-page website build.</li>
-                    <li>Consistent social media posting.</li>
-                    <li>Active review management.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <!-- Tier 3: Scale -->
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3>Scale</h3>
-                <div class="amount">$3,000+</div>
-                <p>Click to view details</p>
-            </div>
-            <div class="flip-card-back">
-                <h3>Scale Includes:</h3>
-                <ul>
-                    <li>Full custom website design.</li>
-                    <li>Daily social media & engagement.</li>
-                    <li>Advanced lead generation strategy.</li>
-                </ul>
+            <!-- Tier 3: Scale -->
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Scale</h3>
+                        <div class="amount">$3,000+</div>
+                        <p>Click to view details</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Scale Includes:</h3>
+                        <ul>
+                            <li>Full custom website design.</li>
+                            <li>Daily social media & engagement.</li>
+                            <li>Advanced lead generation strategy.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SECTION: Footer -->
     <footer class="fade-in">
@@ -93,6 +96,7 @@
     </footer>
 
     <!-- SECTION: JavaScript Integration -->
+    <!-- (Note: The flip functionality is handled by inline JS via the click attribute) -->
     <script src="script.js"></script>
 </body>
 </html>
