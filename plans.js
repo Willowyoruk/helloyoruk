@@ -135,3 +135,19 @@ planForm.addEventListener('submit', (e) => {
 
   window.location.href = mailto;
 });
+
+
+// Ensure keyboard users can select option cards using Space or Enter
+document.querySelectorAll('.option-card').forEach((card) => {
+  card.addEventListener('keydown', (e) => {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      const radio = card.querySelector('input[type="radio"]');
+      if (radio) {
+        radio.checked = true;
+        // Manually trigger change event so renderSummary updates live
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }
+  });
+});
