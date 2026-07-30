@@ -6,7 +6,7 @@
   --paper-alt:  #E9E5D9;
   --ink:        #1D2521;
   --ink-soft:   #4B5750;
-  --ink-faint:  #7A8580;
+  --ink-faint:  #636E69; /* Darkened for ADA color contrast compliance */;
   --accent:     #8A6C4A;
   --accent-deep:#6E5439;
   --accent-tint:#C9B79A;
