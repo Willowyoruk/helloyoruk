@@ -268,18 +268,18 @@
         <p class="section-sub">No pressure, no sales script — just tell me what's going on with your online presence and I'll help you find the right next step.</p>
       </div>
 
-      <form class="contact-form" id="contact-form">
+           <form class="contact-form" id="contact-form" novalidate>
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required autocomplete="name">
+        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
 
         <label for="business">Business name</label>
         <input type="text" id="business" name="business" autocomplete="organization">
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email">
+        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
 
         <label for="message">What do you need?</label>
-        <textarea id="message" name="message" rows="4" required placeholder="e.g. I need a website and someone to keep up with my Google reviews."></textarea>
+        <textarea id="message" name="message" rows="4" required aria-required="true" placeholder="e.g. I need a website and someone to keep up with my Google reviews."></textarea>
 
         <button type="submit" class="btn btn-primary">Send email</button>
         <p class="form-note">This opens your email app with everything filled in — nothing is sent from this page directly.</p>
